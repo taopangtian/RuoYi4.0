@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Owl_Web.iml" filepath="$PROJECT_DIR$/Owl_Web.iml" />
+      <module fileurl="file://$PROJECT_DIR$/backstage-common/backstage-common.iml" filepath="$PROJECT_DIR$/backstage-common/backstage-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/backstage-framework/backstage-framework.iml" filepath="$PROJECT_DIR$/backstage-framework/backstage-framework.iml" />
+      <module fileurl="file://$PROJECT_DIR$/backstage-generator/backstage-generator.iml" filepath="$PROJECT_DIR$/backstage-generator/backstage-generator.iml" />
+      <module fileurl="file://$PROJECT_DIR$/backstage-quartz/backstage-quartz.iml" filepath="$PROJECT_DIR$/backstage-quartz/backstage-quartz.iml" />
+      <module fileurl="file://$PROJECT_DIR$/backstage-system/backstage-system.iml" filepath="$PROJECT_DIR$/backstage-system/backstage-system.iml" />
+      <module fileurl="file://$PROJECT_DIR$/owl-web/owl-web.iml" filepath="$PROJECT_DIR$/owl-web/owl-web.iml" />
+    </modules>
+  </component>
+</project>

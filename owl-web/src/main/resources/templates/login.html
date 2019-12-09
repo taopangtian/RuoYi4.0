@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html  lang="zh" xmlns:th="http://www.thymeleaf.org">
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="renderer" content="webkit">
+		<title>登录</title>
+		<link rel="stylesheet" type="text/css" href="css/owl.css">
+		<link href="css/font-awesome.min.css" th:href="@{/css/font-awesome.min.css}" rel="stylesheet"/>
+		<script src="js/CWebSocket.js" ></script>
+		<!--[if lt IE 9]>
+		<meta http-equiv="refresh" content="0;ie.html" />
+		<![endif]-->
+		<link rel="shortcut icon" href="favicon.ico" th:href="@{favicon.ico}"/>
+
+		<script type="text/javascript">
+			if(window.top!==window.self){window.top.location=window.location};
+		</script>
+		<script type="text/javascript">
+		<!--
+		/*第一种形式 第二种形式 更换显示样式*/
+		function setTab(name,cursel,n){
+			for(var i=1;i<=n;i++){
+				var menu=document.getElementById(name+i);
+				var con=document.getElementById("con_"+name+"_"+i);
+				menu.className=i==cursel?"hover":"";
+				con.style.display=i==cursel?"block":"none";
+			}
+		}
+		//-->
+		var socket = new CWebSocket("ws://127.0.0.1:40101", null, {debug: true, reconnectInterval: 3000});
+		socket.onerror=function (env){
+			// alert("请安装插件");
+			console.log(env);
+
+		};
+		// 监听消息
+		socket.onmessage = function(event) {
+			console.log('Client received a message',event);
+		};
+
+
+		function sendXX(){
+			//var val="101草admin草abcd1234草987934A4-064B-11D3-BB80-01104B35E7F9";
+			var val="3449EC2615BB23182B1D3AAB1C46C6FE97AD04291A833FDBDE6CFB884B6AEA85F04F11F830A631AD7491AAB49C2368ACE68BD45242A067F9294633B94B5BCC29";
+			socket.send(val);
+		}
+		</script>
+		<style type="text/css">
+			label.error {
+				position: absolute;
+				left:0px;
+				top: 35px;
+				color: #ef392b;
+				font-size: 12px;
+			}
+			.fa {
+				display: inline-block;
+				font: normal normal normal 14px/1 FontAwesome;
+				font-size: inherit;
+				text-rendering: auto;
+				-webkit-font-smoothing: antialiased;
+				-moz-osx-font-smoothing: grayscale;
+			}
+			.fa-times-circle:before {content: "\f057";}
+		</style>
+	</head>
+	<body class="login_body">
+		<div class="index_back"></div>
+		<div class="index_diqiu"></div>
+		<div  class="logo">
+			<img src="images/login_logo_35.png" alt="闽保logo">
+		</div>
+		<input class="btnadpt"  type="button"  onclick="sendXX()" value="登&nbsp;&nbsp;录" data-loading="正在验证登录，请稍后..."/>
+		<div class="login_header">
+			<div class="login_title">
+				<img src="images/login_index_01_03.png" alt="计算机终端保密检查系统(网络版)">
+			</div>
+			<div class="login_center hidden" id="selectItem" >
+				<ul class="top01-pro">
+					<li id="one1" onclick="setTab('one',1,2)"  class="hover"><b>登录</b></li>
+					<li id="one2" onclick="setTab('one',2,2)" ><b>管理工具</b></li>
+				</ul>
+				<div class="box-lanrenzhijia">
+					<div id="con_one_1" class="hover">
+						<form id="signupForm">
+							<div class="con_input">
+								<input type="text" name="username" placeholder="请输入用户名" required="" maxlength="30" class="username" value="admin">
+								<img src="images/login_index_01_07.png" alt="用户名" class="con_input_img">
+							</div>
+							<div class="con_input">
+								<input type="password" name="password" placeholder="请输入密码" required="" class="userpassword upwd"   maxlength="30"  disabled="true" value="admin123">
+								<a id="plagin_download_tip" style="color:blue;" href="/ICBCChromeExtension.msi">
+										<div style="white-space:normal;" class="plagin_download_tip">请您点击安JsActive控件，并重启浏览器</div>
+								</a>
+								<img src="images/login_index_01_12.png" alt="密码" class="con_input_img">
+							</div>
+							<div class="con_input"  th:if="${captchaEnabled==true}">
+								<input type="text" name="validateCode"   maxlength="5" autocomplete="off" placeholder="请输入验证码" required="" class="usercode" value="1">
+								<img src="images/login_index_01_10.png" alt="" class="con_input_img">
+								<span class="code_img"><img th:src="@{captcha/captchaImage(type=${captchaType})}"   maxlength="10"  class="imgcode"  alt="验证码"/></span>
+							</div>
+
+							<div class="btns_bg">
+								<input class="btnadpt"  type="submit" id="btnSubmit" value="登&nbsp;&nbsp;录" data-loading="正在验证登录，请稍后..."/>
+							</div>
+						</form>
+					</div>
+					<div id="con_one_2" style="display:none">
+						<div class="con_one_dom">
+							<div class="con_one_border"></div>
+							<p>客户端下载</p>
+						</div>
+						<div class="con_one_dom">
+							<div class="con_one_border"></div>
+							<p>客户端下载</p>
+						</div>
+						<div class="con_one_dom">
+							<div class="con_one_border"></div>
+							<p>客户端下载</p>
+						</div>
+						<div class="con_one_dom">
+							<div class="con_one_border"></div>
+							<p>客户端下载</p>
+						</div>
+					</div>
+				</div>	
+			</div>
+		</div>
+		<footer class="login_text">
+			@福建省闽保科技股份信息有限公司
+		</footer>
+	</body>
+	<script th:inline="javascript"> var ctx = [[@{/}]]; var captchaType = [[${captchaType}]]; </script>
+	<!-- 全局js -->
+	<script src="../static/js/jquery.min.js" th:src="@{/js/jquery.min.js}"></script>
+	<!-- 验证插件 -->
+	<script src="../static/ajax/libs/validate/jquery.validate.min.js" th:src="@{/ajax/libs/validate/jquery.validate.min.js}"></script>
+	<script src="../static/ajax/libs/validate/messages_zh.min.js" th:src="@{/ajax/libs/validate/messages_zh.min.js}"></script>
+	<script src="../static/ajax/libs/layer/layer.min.js" th:src="@{/ajax/libs/layer/layer.min.js}"></script>
+	<script src="../static/ajax/libs/blockUI/jquery.blockUI.js" th:src="@{/ajax/libs/blockUI/jquery.blockUI.js}"></script>
+
+	<script src="../static/js/owl-ui.js" th:src="@{/js/owl-ui.js?v=4.0.0}"></script>
+	<script src="../static/js/login.js" th:src="@{/js/login.js}"></script>
+</html>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="backstage-framework" />
+        <module name="owl-web" />
+        <module name="backstage-generator" />
+        <module name="backstage-quartz" />
+        <module name="backstage-common" />
+        <module name="backstage-system" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="backstage-common" target="1.8" />
+      <module name="backstage-elfinder-core" target="1.8" />
+      <module name="backstage-elfinder-web" target="1.8" />
+      <module name="backstage-framework" target="1.8" />
+      <module name="backstage-generator" target="1.8" />
+      <module name="backstage-gim-basics" target="1.8" />
+      <module name="backstage-gim-business" target="1.8" />
+      <module name="backstage-quartz" target="1.8" />
+      <module name="backstage-system" target="1.8" />
+      <module name="owl-web" target="1.8" />
+      <module name="Owl_Web" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

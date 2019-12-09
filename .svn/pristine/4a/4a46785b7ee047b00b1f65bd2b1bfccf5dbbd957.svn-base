@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="d325c922-d213-434e-b1f6-0ff3ce917f26" name="默认的" comment="修改登录页面">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backstage-common/target/backstage-common-4.0.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/backstage-common/target/backstage-common-4.0.0.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backstage-framework/target/backstage-framework-4.0.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/backstage-framework/target/backstage-framework-4.0.0.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backstage-generator/target/backstage-generator-4.0.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/backstage-generator/target/backstage-generator-4.0.0.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backstage-quartz/target/backstage-quartz-4.0.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/backstage-quartz/target/backstage-quartz-4.0.0.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backstage-system/target/backstage-system-4.0.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/backstage-system/target/backstage-system-4.0.0.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/owl-web/src/main/resources/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/owl-web/src/main/resources/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/owl-web/src/main/resources/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/owl-web/src/main/resources/templates/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/owl-web/src/main/resources/templates/main.html" beforeDir="false" afterPath="$PROJECT_DIR$/owl-web/src/main/resources/templates/main.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/owl-web/target/classes/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/owl-web/target/classes/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/owl-web/target/classes/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/owl-web/target/classes/templates/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/owl-web/target/owl-web.jar" beforeDir="false" afterPath="$PROJECT_DIR$/owl-web/target/owl-web.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/owl-web/target/owl-web.jar.original" beforeDir="false" afterPath="$PROJECT_DIR$/owl-web/target/owl-web.jar.original" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+        <option name="vmOptionsForImporter" value="-Xmx768m" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1SryPXUbcBKMRTGkv3oOF0V08Hd" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="GO_FMT" value="true" />
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="go.import.settings.migrated" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="preferences.general" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\workpacse\java\mb-owl\mb-owl-web\src\main\resources\templates\owl" />
+      <recent name="D:\workpacse\java\mb-owl\mb-owl-web\src\main\resources\static" />
+      <recent name="D:\workpacse\java\mb-owl\mb-owl-web\src\main\resources\static\images" />
+      <recent name="D:\workpacse\java\mb-owl\mb-owl-web\src\main\resources\static\css" />
+      <recent name="D:\workpacse\java\mb-owl\mb-owl-web\src\main\resources\templates" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\workpacse\java\mb-owl\mb-owl-web\src\main\resources\static" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="JetRunConfigurationType" factoryName="Kotlin">
+      <module name="Owl_Web" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType" factoryName="Kotlin script">
+      <module name="Owl_Web" />
+      <option name="filePath" />
+      <option name="vmParameters" />
+      <option name="alternativeJrePath" />
+      <option name="programParameters" />
+      <option name="passParentEnvs" value="true" />
+      <option name="workingDirectory" />
+      <option name="isAlternativeJrePathEnabled" value="false" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="filePath" />
+      <option name="vmParameters" />
+      <option name="alternativeJrePath" />
+      <option name="programParameters" />
+      <option name="passParentEnvs" value="true" />
+      <option name="workingDirectory" />
+      <option name="isAlternativeJrePathEnabled" value="false" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="OwlWebApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="owl-web" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.backstage.OwlWebApplication" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SvnConfiguration" cleanupOnStartRun="true">
+    <configuration>C:\Users\Administrator\AppData\Roaming\Subversion</configuration>
+    <supportedVersion>125</supportedVersion>
+  </component>
+  <component name="SvnFileUrlMappingImpl">
+    <option name="myMappingRoots">
+      <list>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="D:\workpacse\java\Owl_Web" />
+          <option name="myCopyRoot" value="D:\workpacse\java\Owl_Web" />
+        </SvnCopyRootSimple>
+      </list>
+    </option>
+    <option name="myMoreRealMappingRoots">
+      <list>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="D:\workpacse\java\Owl_Web" />
+          <option name="myCopyRoot" value="D:\workpacse\java\Owl_Web" />
+        </SvnCopyRootSimple>
+      </list>
+    </option>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d325c922-d213-434e-b1f6-0ff3ce917f26" name="默认的" comment="" />
+      <created>1572335985483</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1572335985483</updated>
+      <workItem from="1572335986639" duration="3767000" />
+      <workItem from="1574055466705" duration="801000" />
+      <workItem from="1574060059733" duration="7238000" />
+      <workItem from="1574131563749" duration="239000" />
+      <workItem from="1574132188044" duration="20192000" />
+      <workItem from="1574903266923" duration="12000" />
+      <workItem from="1574904219242" duration="13769000" />
+      <workItem from="1574926577034" duration="643000" />
+      <workItem from="1574927466098" duration="3277000" />
+      <workItem from="1574930760653" duration="3850000" />
+      <workItem from="1574989753907" duration="12551000" />
+      <workItem from="1575016491772" duration="1114000" />
+      <workItem from="1575248311642" duration="1855000" />
+      <workItem from="1575251427432" duration="2264000" />
+      <workItem from="1575265869707" duration="173000" />
+      <workItem from="1575266846674" duration="161000" />
+      <workItem from="1575351904912" duration="9550000" />
+      <workItem from="1575363903405" duration="3944000" />
+    </task>
+    <task id="LOCAL-00001" summary="修改登录页面">
+      <created>1575359167984</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1575359167984</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="修改登录页面" />
+    <option name="LAST_COMMIT_MESSAGE" value="修改登录页面" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/owl-web/src/main/resources/templates/login1.html</url>
+          <line>62</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>

@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html  lang="zh" xmlns:th="http://www.thymeleaf.org">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="renderer" content="webkit">
+		<title>OWL后台系统</title>
+		<link rel="stylesheet" type="text/css" href="css/owl.css">
+
+		<!--[if lt IE 9]>
+		<meta http-equiv="refresh" content="0;ie.html"/>
+		<![endif]-->
+		<link th:href="@{favicon.ico}" rel="stylesheet"/>
+		<style type="text/css">
+			#content-main {
+				overflow: hidden;
+				bottom: 0px;
+				width: 100%;
+				position: absolute;
+				top: 5rem;
+				left: 0.75rem;
+			}
+			#content-terminal {
+				overflow: hidden;
+				bottom: 0px;
+				width: 100%;
+				position: absolute;
+				top: 5rem;
+				left: 0.75rem;
+			}
+            #content-personal {
+                overflow: hidden;
+                bottom: 0px;
+                width: 100%;
+                position: absolute;
+                top: 5rem;
+                left: 0.75rem;
+            }
+			#content-setup {
+				overflow: hidden;
+				bottom: 0px;
+				width: 100%;
+				position: absolute;
+				top: 5rem;
+				left: 0.75rem;
+			}
+			#content-strategy {
+				overflow: hidden;
+				bottom: 0px;
+				width: 100%;
+				position: absolute;
+				top: 5rem;
+				left: 0.75rem;
+			}
+			#content-statistics {
+				overflow: hidden;
+				bottom: 0px;
+				width: 100%;
+				position: absolute;
+				top: 5rem;
+				left: 0.75rem;
+			}
+			.row {
+				margin-right: -15px;
+				margin-left: -15px;
+			}
+		</style>
+		<script>
+			function show1(id) {
+
+				if(id=='1'){
+					$("#content-main").show();
+					$("#content-terminal").hide();
+					$("#content-personal").hide();
+					$("#content-setup").hide();
+					$("#content-strategy").hide();
+					$("#content-statistics").hide();
+				}else if(id=='2'){
+					$("#content-main").hide();
+					$("#content-terminal").show();
+					$("#content-personal").hide();
+					$("#content-setup").hide();
+					$("#content-strategy").hide();
+					$("#content-statistics").hide();
+				}else if(id=='6'){
+					$("#content-main").hide();
+					$("#content-terminal").hide();
+					$("#content-personal").show();
+					$("#content-setup").hide();
+					$("#content-strategy").hide();
+					$("#content-statistics").hide();
+				}else if(id=='3'){
+					$("#content-main").hide();
+					$("#content-terminal").hide();
+					$("#content-personal").hide();
+					$("#content-setup").show();
+					$("#content-strategy").hide();
+					$("#content-statistics").hide();
+				}else if(id=='4'){
+					$("#content-main").hide();
+					$("#content-terminal").hide();
+					$("#content-personal").hide();
+					$("#content-setup").hide();
+					$("#content-strategy").hide();
+					$("#content-statistics").show();
+				}else if(id=='5'){
+					$("#content-main").hide();
+					$("#content-terminal").hide();
+					$("#content-personal").hide();
+					$("#content-setup").hide();
+					$("#content-strategy").show();
+					$("#content-statistics").hide();
+				}
+			}
+		</script>
+	</head>
+	<body>
+		<!-- 头部导航开始 -->
+		<nav class="index_nav">
+			<div class="index_logo">
+				<img src="images/login_index_03.png" alt="logo">
+			</div>
+			<div class="index_header">
+				<ul>
+					<li th:each="menu : ${menus}">
+						<a th:id="${menu.menuId}" th:onclick="show1(this.id)"  th:class="@{${menu.url != '' && menu.url != '#'} ? ${menu.target}}" th:href="@{${menu.url == ''} ? |#| : ${menu.url}}">
+							<div th:class="${menu.icon}"></div>
+						</a>
+					</li>
+				</ul>
+			</div>
+			<div class="index_ope">
+				<ul>
+					<li>
+						<img th:src="@{/images/login_index_18.png}" alt="消息">
+						<span class="s-top">6</span>
+						<span>消息</span>
+					</li>
+					<li>
+						<img th:src="@{/images/profile.png}" class="user-image">
+						<span>[[${user.userName}]]</span>
+					</li>
+					<li>
+						<a th:href="@{logout}">
+							<img th:src="@{/images/login_index_22.png}" alt="退出">
+							<span>退出</span>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+
+		<div class="row mainContent" id="content-main">
+			<iframe class="owl_iframe" name="iframe0" width="100%" height="100%" data-id="/system/main"
+					th:src="@{/system/main}" frameborder="0" seamless></iframe>
+		</div>
+		<div class="row mainContent" id="content-terminal" style="display: none">
+			<iframe class="owl_iframe" name="iframe0" width="100%" height="100%" data-id="/system/personal"
+					th:src="@{/system/terminal}" frameborder="0" seamless></iframe>
+		</div>
+		<div class="row mainContent" id="content-personal" style="display: none">
+			<iframe class="owl_iframe" name="iframe0" width="100%" height="100%" data-id="/system/personal"
+					th:src="@{/system/personal}" frameborder="0" seamless></iframe>
+		</div>
+		<div class="row mainContent" id="content-setup" style="display: none">
+			<iframe class="owl_iframe" name="iframe0" width="100%" height="100%" data-id="/system/setup"
+					th:src="@{/system/setup}" frameborder="0" seamless></iframe>
+		</div>
+		<div class="row mainContent" id="content-strategy" style="display: none">
+			<iframe class="owl_iframe" name="iframe0" width="100%" height="100%" data-id="/system/strategy"
+					th:src="@{/system/strategy}" frameborder="0" seamless></iframe>
+		</div>
+		<div class="row mainContent" id="content-statistics" style="display: none">
+			<iframe class="owl_iframe" name="iframe0" width="100%" height="100%" data-id="/system/statistics"
+					th:src="@{/system/statistics}" frameborder="0" seamless></iframe>
+		</div>
+		<script  src="js/jquery.min.js"></script>
+
+	</body>
+</html>

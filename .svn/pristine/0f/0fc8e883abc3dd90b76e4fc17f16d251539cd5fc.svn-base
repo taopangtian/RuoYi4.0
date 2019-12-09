@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>左侧二级目录</title>
+		<link rel="stylesheet" type="text/css" href="static/owl/style.css">
+	</head>
+	<body>
+		<aside class="index_aside box_shadow border_radius" >
+			<ul>
+				<li class="herde">
+					首页
+					<img src="images/login_index_35.png" class="index_shouye">
+					<img src="images/login_index_01_00.png" class="index_youce">
+					</li>
+				<li>
+					终端管理
+					<img src="images/login_index_45.png" class="index_shouye">
+					<img src="images/login_index_01_00.png" class="index_youce">
+				</li>
+				<li>
+					审计报警
+					<img src="images/login_index_48.png" class="index_shouye">
+					<img src="images/login_index_01_00.png" class="index_youce">
+				</li>
+				<li>
+					策略管理
+					<img src="images/login_index_51.png" class="index_shouye">
+					<img src="images/login_index_01_00.png" class="index_youce">
+				</li>
+				<li></li>
+			</ul>
+		</aside>
+	</body>
+</html>

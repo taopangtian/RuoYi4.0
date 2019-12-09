@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>设置-服务器设置</title>
+		<link rel="stylesheet" type="text/css" href="static/owl/style.css">
+		<script src="js/jquery.min.js"></script>
+	</head>
+	<body>
+		<!-- 导航开始 -->
+		<nav class="index_nav border_radius">
+			<div class="index_logo">
+				<img src="images/login_index_03.png" alt="logo">
+			</div>
+			<div class="index_header ">
+				<ul>
+					<li><div onclick="window.location.href='index.html'"  class="menu_home"></div></li>
+					<li><div onclick="window.location.href='terminal.html'"  class="menu_audit"></div></li>
+					<li><div onclick="window.location.href='index.html'" class="menu_setup"></div></li>
+					<li><div onclick="window.location.href='index.html'" class="menu_statistics"></div></li>
+					<li><div onclick="window.location.href='index.html'" class="menu_strategy"></div></li>
+					<li><div onclick="window.location.href='personal.html'" class="div_selection menu_terminal"></div></li>
+				</ul>
+			</div>
+			<div class="index_ope">
+				<ul>
+					<li>
+						<img src="images/login_index_18.png" alt="消息">
+						<span class="s-top">10</span>
+						<span>消息</span>
+					</li>
+					<li>
+						<img src="images/login_index_20.png" alt="管理员">
+						<span>管理员</span>
+					</li>
+					<li>
+						<img src="images/login_index_22.png" alt="退出">
+						<span>退出</span>
+					</li>
+				</ul>
+			</div>
+		</nav>
+		<!-- 导航结束 -->
+		<div class="index_section ">
+			<!-- 左侧导航开始 -->
+			<aside class="index_aside box_shadow border_radius server_nav" >
+				<ul>
+					<li class="herde">
+						<a href="#">
+						修改密码
+						<img src="images/index_set_0012.png" class="index_shouye">
+						<img src="images/login_index_01_00.png" class="index_youce"></a>
+						</li>
+					<li >
+						<a href="#">
+						服务器设置
+						<img src="images/index_set_0011.png" class="index_shouye">
+						<img src="images/login_index_01_00.png" class="index_youce"></a>
+					</li>
+					<li><a href="#">
+						单位信息
+						<img src="images/index_set_0010.png" class="index_shouye">
+						<img src="images/login_index_01_00.png" class="index_youce"></a>
+					</li>
+					<li><a href="#">
+						部门管理
+						<img src="images/index_set_0009.png" class="index_shouye">
+						<img src="images/login_index_01_00.png" class="index_youce"></a>
+					</li>
+					<li><a href="#">
+						自定义组管理
+						<img src="images/index_set_0008.png" class="index_shouye">
+						<img src="images/login_index_01_00.png" class="index_youce"></a>
+					</li>
+					<li><a href="#">
+						模板管理
+						<img src="images/index_set_0007.png" class="index_shouye">
+						<img src="images/login_index_01_00.png" class="index_youce"></a>
+					</li>
+					<li><a href="#">
+						登录设置
+						<img src="images/index_set_0006.png" class="index_shouye">
+						<img src="images/login_index_01_00.png" class="index_youce"></a>
+					</li>
+					<li><a href="#">
+						个人设置
+						<img src="images/index_set_0005.png" class="index_shouye">
+						<img src="images/login_index_01_00.png" class="index_youce"></a>
+					</li>
+					<li><a href="#">
+						授权管理
+						<img src="images/index_set_0004.png" class="index_shouye">
+						<img src="images/login_index_01_00.png" class="index_youce"></a>
+					</li>
+					<li><a href="#">
+						审计日记设置
+						<img src="images/index_set_0003.png" class="index_shouye">
+						<img src="images/login_index_01_00.png" class="index_youce"></a>
+					</li>
+					<li><a href="#">
+						用户设置
+						<img src="images/index_set_0002.png" class="index_shouye">
+						<img src="images/login_index_01_00.png" class="index_youce"></a>
+					</li>
+					<li><a href="#">
+						客户端管理
+						<img src="images/index_set_0001.png" class="index_shouye">
+						<img src="images/login_index_01_00.png" class="index_youce"></a>
+					</li>
+					<li><a href="#">
+						邮件设置
+						<img src="images/index_set_0000.png" class="index_shouye">
+						<img src="images/login_index_01_00.png" class="index_youce"></a>
+					</li>
+				</ul>
+			</aside>
+			<!-- 右侧开始 -->
+			<div class="index_sea">
+				<!-- 修改密码开始 -->
+				<div   class="cont cont_header">
+					<!-- 路径导航开始 -->
+					<div class="route">
+						<div class="route_magin_left route_x1 box_shadow border_radius">设置</div>
+						<img src="images/login_index_01_00.png" alt="建号" class="route_magin_left">
+						<span>修改密码</span>
+					</div>
+					<!-- 路径导航结束 -->
+					<div class=" border_radius box_shadow per_width">
+						<div class="per_title">
+							<h2>修改密码</h2>
+							<span class="text_header border_radius">&nbsp;</span>
+						</div>
+						<div class="per_min_width">
+							<ul>
+								<li>
+									<div class="per_left">
+										<span>原来密码</span>
+									</div>
+									<div class="per_right">
+										<input type="text" name="" id="" placeholder="请输入原来密码" required="" class="per_pass border_radius">
+										<img src="images/index_set_0013.png" alt="明码">
+									</div>
+									<div class="per_bottom">
+										忘记密码?
+									</div>
+								</li>
+								<li>
+									<div class="per_left">
+										<span>原来密码</span>
+									</div>
+									<div class="per_right">
+										<input type="text" name="" id="" placeholder="请输入原来密码" required="" class="per_pass border_radius">
+										<img src="images/index_set_0013.png" alt="明码">
+									</div>
+									<div class="per_bottom per_color_aaa">
+										密码由6-16位字符组成,区分大小写(可以包括字母,字符,数字)
+									</div>
+								</li>
+								<li>
+									<div class="per_left">
+										<span>原来密码</span>
+									</div>
+									<div class="per_right">
+										<input type="text" name="" id="" placeholder="请输入原来密码" required="" class="per_pass border_radius">
+										<img src="images/index_set_0013.png" alt="明码">
+									</div>
+									<div class="per_bottom per_color_aaa">
+										确认密码是否和上面密码一致
+									</div>
+								</li>
+							</ul>
+							<div>
+								<input type="button" id="" value="保存修改" class="per_inc border_radius ">
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- 修改密码结束 -->
+				
+				<!-- 服务器设置开始 -->
+				<div class=" cont " >
+					<!-- 路径导航开始 -->
+					<div class="route">
+						<div class="route_magin_left route_x1 box_shadow border_radius">设置</div>
+						<img src="images/login_index_01_00.png" alt="建号" class="route_magin_left">
+						<span>服务器设置</span>
+					</div>
+					<!-- 路径导航结束 -->
+					<div class=" border_radius box_shadow per_width">
+						<div class="per_title">
+							<h2>服务器设置</h2>
+							<span class="text_header border_radius">&nbsp;</span>
+						</div>
+						<div class="per_min_width">
+							<ul>
+								<li>
+									<div class="per_left">
+										<span>IP</span>
+									</div>
+									<div class="per_right">
+										<input type="text" name="" id="" placeholder="请输入IP地址" required="" class="per_pass border_radius">
+									</div>
+								</li>
+								<li>
+									<div class="per_left">
+										<span>TCP端口</span>
+									</div>
+									<div class="per_right">
+										<input type="text" name="" id="" placeholder="请输入TCP端口" required="" class="per_pass border_radius">
+									</div>
+								</li>
+							</ul>
+							<div>
+								<input type="button" id="" value="保存修改" class="per_inc border_radius ">
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- 服务器设置结束 -->
+				
+				<!-- 单位信息开始 -->
+				<div  class="cont">
+					<!-- 路径导航开始 -->
+					<div class="route">
+						<div class="route_magin_left route_x1 box_shadow border_radius">设置</div>
+						<img src="images/login_index_01_00.png" alt="建号" class="route_magin_left">
+						<span>服务器设置</span>
+					</div>
+					<!-- 路径导航结束 -->
+					<div class=" border_radius box_shadow per_width">
+						<div class="per_title">
+							<h2>服务器设置</h2>
+							<span class="text_header border_radius">&nbsp;</span>
+						</div>
+						<div class="per_min_width">
+							<ul>
+								<li>
+									<div class="per_left">
+										<span>识别码</span>
+									</div>
+									<div class="per_right">
+										<input type="text" name="" id="" placeholder="mb-sfa123123-123" required=" true" readonly="readonly"  class="per_pass border_radius per-shibie">
+									</div>
+									<div class="per_cop"><img src="images/index_cop.png">复制识别码</div>
+								</li>
+								<li>
+									<div class="per_left">
+										<span>单位名称</span>
+									</div>
+									<div class="per_right">
+										<input type="text" name="" id="" placeholder="请输入单位名称" required="" class="per_pass border_radius">
+									</div>
+								</li>
+							</ul>
+							<div>
+								<input type="button" id="" value="保存修改" class="per_inc border_radius ">
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- 单位信息结束 -->
+				
+				<!-- 部门管理开始 -->
+				<div  class="cont">
+					<!-- 路径导航开始 -->
+					<div class="route">
+						<div class="route_magin_left route_x1 box_shadow border_radius">设置</div>
+						<img src="images/login_index_01_00.png" alt="建号" class="route_magin_left">
+						<span>部门管理</span>
+					</div>
+					<!-- 路径导航结束 -->
+					<div class=" border_radius box_shadow per_width">
+						<div class="per_title">
+							<h2>部门管理</h2>
+							<span class="text_header border_radius">&nbsp;</span>
+						</div>
+						<div class="per_oper">
+							<input type="button" id="" value="增加" class="s_inc border_radius s_buttom">
+							<input type="button" id="" value="修改" class="s_modify border_radius s_buttom">
+							<input type="button" id="" value="删除" class="s_delete border_radius s_buttom">
+							<input type="button" id="" value="导入" class="s_import border_radius s_buttom">
+							<div class="sech_right box_shadow border_radius">
+								<ul>
+									<li onclick="change()"><img src="images/index_temli_0004_sousuo.png"  alt="搜索"/></li><li onclick="window.location.reload()"><img src="images/index_temli_0005_shuaxin.png"  alt="刷新"/></li><li><img src="images/index_temli_0006_gengduo.png"  alt="搜索"/></li>
+								</ul>
+							</div>
+							<table class="per_table">
+								<tbody>
+									<tr>
+										<th><input type="checkbox" name="" value="序号"> 序号</th>
+										<th>部门名称</th>
+										<th>责任人</th>
+										<th>备注</th>
+										<th>操作</th>
+									</tr>
+									<tr>
+										<td><input type="checkbox" name="" value="1"> 001</td>
+										<td>财务部门 </td>
+										<td>张大仙</td>
+										<td>无</td>
+										<td>
+											<input type="button" id="" value="修改" class="s_modify border_radius s_buttom">
+											<input type="button" id="" value="删除" class="s_delete border_radius s_buttom">
+										</td>
+									</tr>
+									<tr>
+										<td><input type="checkbox" name="" value="2"> 002</td>
+										<td>财务部门 </td>
+										<td>张大仙</td>
+										<td>无</td>
+										<td>
+											<input type="button" id="" value="修改" class="s_modify border_radius s_buttom">
+											<input type="button" id="" value="删除" class="s_delete border_radius s_buttom">
+										</td>
+									</tr>
+									<tr>
+										<td><input type="checkbox" name="" value="3"> 003</td>
+										<td>财务部门 </td>
+										<td>张大仙</td>
+										<td>无</td>
+										<td>
+											<input type="button" id="" value="修改" class="s_modify border_radius s_buttom">
+											<input type="button" id="" value="删除" class="s_delete border_radius s_buttom">
+										</td>
+									</tr>
+									<tr>
+										<td><input type="checkbox" name="" value="4"> 004</td>
+										<td>财务部门 </td>
+										<td>张大仙</td>
+										<td>无</td>
+										<td>
+											<input type="button" id="" value="修改" class="s_modify border_radius s_buttom">
+											<input type="button" id="" value="删除" class="s_delete border_radius s_buttom">
+										</td>
+									</tr>
+									<tr>
+										<td><input type="checkbox" name="" value="5"> 005</td>
+										<td>财务部门 </td>
+										<td>张大仙</td>
+										<td>无</td>
+										<td>
+											<input type="button" id="" value="修改" class="s_modify border_radius s_buttom">
+											<input type="button" id="" value="删除" class="s_delete border_radius s_buttom">
+										</td>
+									</tr>
+									<tr>
+										<td><input type="checkbox" name="" value="2"> 002</td>
+										<td>财务部门 </td>
+										<td>张大仙</td>
+										<td>无</td>
+										<td>
+											<input type="button" id="" value="修改" class="s_modify border_radius s_buttom">
+											<input type="button" id="" value="删除" class="s_delete border_radius s_buttom">
+										</td>
+									</tr>
+									<tr>
+										<td><input type="checkbox" name="" value="3"> 003</td>
+										<td>财务部门 </td>
+										<td>张大仙</td>
+										<td>无</td>
+										<td>
+											<input type="button" id="" value="修改" class="s_modify border_radius s_buttom">
+											<input type="button" id="" value="删除" class="s_delete border_radius s_buttom">
+										</td>
+									</tr>
+									<tr>
+										<td><input type="checkbox" name="" value="4"> 004</td>
+										<td>财务部门 </td>
+										<td>张大仙</td>
+										<td>无</td>
+										<td>
+											<input type="button" id="" value="修改" class="s_modify border_radius s_buttom">
+											<input type="button" id="" value="删除" class="s_delete border_radius s_buttom">
+										</td>
+									</tr>
+									<tr>
+										<td><input type="checkbox" name="" value="5"> 005</td>
+										<td>财务部门 </td>
+										<td>张大仙</td>
+										<td>无</td>
+										<td>
+											<input type="button" id="" value="修改" class="s_modify border_radius s_buttom">
+											<input type="button" id="" value="删除" class="s_delete border_radius s_buttom">
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+				<!-- 部门管理结束 -->
+				
+				<!-- 自定义组管理开始 -->
+				<div  class="cont">
+					<!-- 路径导航开始 -->
+					<div class="route">
+						<div class="route_magin_left route_x1 box_shadow border_radius">设置</div>
+						<img src="images/login_index_01_00.png" alt="建号" class="route_magin_left">
+						<span>自定义组管理</span>
+					</div>
+					<!-- 路径导航结束 -->
+					<div class=" border_radius box_shadow per_width">
+						<div class="per_title">
+							<h2>自定义组管理</h2>
+							<span class="text_header border_radius">&nbsp;</span>
+						</div>
+						<div class="per_oper">
+							<input type="button" id="" value="增加" class="s_inc border_radius s_buttom">
+							<input type="button" id="" value="修改" class="s_modify border_radius s_buttom">
+							<input type="button" id="" value="删除" class="s_delete border_radius s_buttom">
+							<input type="button" id="" value="导入" class="s_import border_radius s_buttom">
+							<div class="sech_right box_shadow border_radius">
+								<ul>
+									<li onclick="change()"><img src="images/index_temli_0004_sousuo.png"  alt="搜索"/></li><li onclick="window.location.reload()"><img src="images/index_temli_0005_shuaxin.png"  alt="刷新"/></li><li><img src="images/index_temli_0006_gengduo.png"  alt="搜索"/></li>
+								</ul>
+							</div>
+							<table class="per_table">
+								<tbody>
+									<tr>
+										<th><input type="checkbox" name="" value="序号"> 序号</th>
+										<th>部门名称</th>
+										<th>责任人</th>
+										<th>备注</th>
+										<th>操作</th>
+									</tr>
+									<tr>
+										<td><input type="checkbox" name="" value="1"> 001</td>
+										<td>财务部门 </td>
+										<td>张大仙</td>
+										<td>无</td>
+										<td>
+											<input type="button" id="" value="修改" class="s_modify border_radius s_buttom">
+											<input type="button" id="" value="删除" class="s_delete border_radius s_buttom">
+										</td>
+									</tr>
+									<tr>
+										<td><input type="checkbox" name="" value="2"> 002</td>
+										<td>财务部门 </td>
+										<td>张大仙</td>
+										<td>无</td>
+										<td>
+											<input type="button" id="" value="修改" class="s_modify border_radius s_buttom">
+											<input type="button" id="" value="删除" class="s_delete border_radius s_buttom">
+										</td>
+									</tr>
+									<tr>
+										<td><input type="checkbox" name="" value="3"> 003</td>
+										<td>财务部门 </td>
+										<td>张大仙</td>
+										<td>无</td>
+										<td>
+											<input type="button" id="" value="修改" class="s_modify border_radius s_buttom">
+											<input type="button" id="" value="删除" class="s_delete border_radius s_buttom">
+										</td>
+									</tr>
+									<tr>
+										<td><input type="checkbox" name="" value="4"> 004</td>
+										<td>财务部门 </td>
+										<td>张大仙</td>
+										<td>无</td>
+										<td>
+											<input type="button" id="" value="修改" class="s_modify border_radius s_buttom">
+											<input type="button" id="" value="删除" class="s_delete border_radius s_buttom">
+										</td>
+									</tr>
+									<tr>
+										<td><input type="checkbox" name="" value="5"> 005</td>
+										<td>财务部门 </td>
+										<td>张大仙</td>
+										<td>无</td>
+										<td>
+											<input type="button" id="" value="修改" class="s_modify border_radius s_buttom">
+											<input type="button" id="" value="删除" class="s_delete border_radius s_buttom">
+										</td>
+									</tr>
+									<tr>
+										<td><input type="checkbox" name="" value="2"> 002</td>
+										<td>财务部门 </td>
+										<td>张大仙</td>
+										<td>无</td>
+										<td>
+											<input type="button" id="" value="修改" class="s_modify border_radius s_buttom">
+											<input type="button" id="" value="删除" class="s_delete border_radius s_buttom">
+										</td>
+									</tr>
+									<tr>
+										<td><input type="checkbox" name="" value="3"> 003</td>
+										<td>财务部门 </td>
+										<td>张大仙</td>
+										<td>无</td>
+										<td>
+											<input type="button" id="" value="修改" class="s_modify border_radius s_buttom">
+											<input type="button" id="" value="删除" class="s_delete border_radius s_buttom">
+										</td>
+									</tr>
+									<tr>
+										<td><input type="checkbox" name="" value="4"> 004</td>
+										<td>财务部门 </td>
+										<td>张大仙</td>
+										<td>无</td>
+										<td>
+											<input type="button" id="" value="修改" class="s_modify border_radius s_buttom">
+											<input type="button" id="" value="删除" class="s_delete border_radius s_buttom">
+										</td>
+									</tr>
+									<tr>
+										<td><input type="checkbox" name="" value="5"> 005</td>
+										<td>财务部门 </td>
+										<td>张大仙</td>
+										<td>无</td>
+										<td>
+											<input type="button" id="" value="修改" class="s_modify border_radius s_buttom">
+											<input type="button" id="" value="删除" class="s_delete border_radius s_buttom">
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+				<!-- 自定义组管理结束 -->
+				
+				<!-- 模板管理开始 -->
+				<div class=" cont " >
+					<!-- 路径导航开始 -->
+					<div class="route">
+						<div class="route_magin_left route_x1 box_shadow border_radius">设置</div>
+						<img src="images/login_index_01_00.png" alt="建号" class="route_magin_left">
+						<span>模板管理</span>
+					</div>
+					<!-- 路径导航结束 -->
+					<div class=" border_radius box_shadow per_width">
+						<div class="per_title">
+							<h2>模板管理</h2>
+							<span class="text_header border_radius">&nbsp;</span>
+						</div>
+						<div class="per_auto_width">
+							<ul>
+								<li>
+									<div class="per_left">
+										<span>终端模板</span>
+									</div>
+									<div class="per_choice">
+										<div>选择文件</div>
+										<div class="per_right border_radius">
+											<input type="text" name="" id="" placeholder="请输入IP地址" readonly="readonly"  class="per_input_text">
+											<input type="button"  value="浏览文件" class="per_ll_button"/>
+										</div>
+									</div>
+									
+								</li>
+								<li>
+									<div class="per_left">
+										<span>策略模板</span>
+									</div>
+									<div class="per_choice">
+										<div>选择文件</div>
+										<div class="per_right border_radius">
+											<input type="text" name="" id="" placeholder="请输入IP地址" readonly="readonly"  class="per_input_text">
+											<input type="button"  value="浏览文件" class="per_ll_button"/>
+										</div>
+									</div>
+									
+								</li>
+								<li>
+									<div class="per_left">
+										<span>部门模板</span>
+									</div>
+									<div class="per_choice">
+										<div>选择文件</div>
+										<div class="per_right border_radius">
+											<input type="text" name="" id="" placeholder="请输入IP地址" readonly="readonly"  class="per_input_text">
+											<input type="button"  value="浏览文件" class="per_ll_button"/>
+										</div>
+									</div>
+									
+								</li>
+							</ul>
+							<div>
+								<input type="button" id="" value="保存修改" class="per_inc border_radius ">
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- 模板管理结束 -->
+				
+				<!-- 登录设置开始 -->
+				<div class=" cont " >
+					<!-- 路径导航开始 -->
+					<div class="route">
+						<div class="route_magin_left route_x1 box_shadow border_radius">设置</div>
+						<img src="images/login_index_01_00.png" alt="建号" class="route_magin_left">
+						<span>登录设置</span>
+					</div>
+					<!-- 路径导航结束 -->
+					<div class=" border_radius box_shadow per_width">
+						<div class="per_title">
+							<h2>登录设置</h2>
+							<span class="text_header border_radius">&nbsp;</span>
+						</div>
+						<div class="per_auto_width">
+							<ul>
+								<li>
+									<div class="per_left">
+										<span>用户设置</span>
+									</div>
+									<div class="per_choice">
+										<div>选择文件</div>
+										<div class="per_right border_radius">
+											<input type="text" name="" id="" placeholder="请输入IP地址" readonly="readonly"  class="per_input_text">
+											<input type="button"  value="浏览文件" class="per_ll_button"/>
+										</div>
+									</div>
+									
+								</li>
+								<li>
+									<div class="per_left">
+										<span>超时设置</span>
+									</div>
+									<div class="per_choice">
+										<div>选择文件</div>
+										<div class="per_right border_radius">
+											<input type="text" name="" id="" placeholder="请输入IP地址" readonly="readonly"  class="per_input_text">
+											<input type="button"  value="浏览文件" class="per_ll_button"/>
+										</div>
+									</div>
+									
+								</li>
+								<li>
+									<div class="per_left">
+										<span>密码强度</span>
+									</div>
+									<div class="per_choice">
+										<div>选择文件</div>
+										<div class="per_right border_radius">
+											<input type="text" name="" id="" placeholder="请输入IP地址" readonly="readonly"  class="per_input_text">
+											<input type="button"  value="浏览文件" class="per_ll_button"/>
+										</div>
+									</div>
+									
+								</li>
+							</ul>
+							<div>
+								<input type="button" id="" value="保存修改" class="per_inc border_radius ">
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- 登录设置结束 -->
+				
+				<div  style="background: #00f;" class="cont">
+					444
+				</div>
+					
+			</div>
+		</div>
+		<script type="text/javascript">
+			$(function(){
+				//选项卡切换
+				$('.server_nav ul li').click(function(){
+					indexC = $(this).index();
+					$(this).addClass('herde').siblings().removeClass('herde');
+					$('.cont').eq(indexC).addClass('cont_header').siblings().removeClass('cont_header');
+				})
+				
+			
+			});
+			function change(){
+						 var divEle= document.getElementById('section');
+						divEle.className='demo2';//改变样式
+						
+			};
+		</script>
+		
+	</body>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html  lang="zh" xmlns:th="http://www.thymeleaf.org">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="renderer" content="webkit">
+	<title>OWL后台系统</title>
+	<link rel="stylesheet" type="text/css" href="/css/owl.css">
+	<!--[if lt IE 9]>
+	<meta http-equiv="refresh" content="0;ie.html"/>
+	<![endif]-->
+	<link rel="shortcut icon" href="favicon.ico"/>
+	<style type="text/css">
+		.owl_iframe {
+			overflow: hidden;
+			bottom: 0px;
+			width: 100%;
+			position: absolute;
+			top: 5rem;
+			left: 0.75rem;
+			margin-right: -15px;
+			margin-left: -15px;
+		}
+	</style>
+
+</head>
+<body>
+<!-- 头部导航开始 -->
+<nav class="index_nav">
+	<div class="index_logo">
+		<img th:src="@{/images/login_index_03.png}" alt="logo">
+	</div>
+	<div class="index_header">
+		<ul>
+			<li th:each="menu : ${menus}" th:data-url="@{${menu.url == ''} ? |#| : ${menu.url}}">
+				<div th:class="${menu.icon}"></div>
+			</li>
+		</ul>
+	</div>
+	<div class="index_ope">
+		<ul>
+			<li>
+				<img th:src="@{/images/login_index_18.png}" alt="消息">
+				<span class="s-top">6</span>
+				<span>消息</span>
+			</li>
+			<li>
+				<img th:src="@{/images/profile.png}" class="user-image">
+				<span>[[${user.userName}]]</span>
+			</li>
+			<li>
+				<a th:href="@{'/'+logout}">
+					<img th:src="@{/images/login_index_22.png}" alt="退出">
+					<span>退出</span>
+				</a>
+			</li>
+		</ul>
+	</div>
+</nav>
+
+<div class="owl_iframe" >
+	<iframe   width="100%" height="100%" th:src="@{/owl/main}" frameborder="0" seamless></iframe>
+</div>
+
+</body>
+<script  src="/js/jquery.min.js"></script>
+<script src="/ajax/libs/layer/layer.min.js" th:src="@{/ajax/libs/layer/layer.min.js}"></script>
+
+<script type="text/javascript">
+	$(function(){
+		$(".index_nav .index_header li").eq(0).addClass("div_selection");
+		$(".index_nav .index_header li").bind("click",function () {
+
+			var dataUrl= $(this).attr("data-url");
+
+			if(!dataUrl){ return false;}
+
+			var loading = layer.load(0, {shade: false});
+
+			$(this).addClass("div_selection").siblings().removeClass("div_selection");
+			$(".owl_iframe>iframe").attr("src",  $(this).attr("data-url") );
+
+			$('.owl_iframe>iframe:visible').load(function () {
+				layer.close(loading);
+			});
+			return true;
+
+		});
+
+	});
+</script>
+</html>

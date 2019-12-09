@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html  lang="zh" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="renderer" content="webkit">
+    <title>OWL后台系统</title>
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+
+
+    <!--[if lt IE 9]>
+    <meta http-equiv="refresh" content="0;ie.html"/>
+    <![endif]-->
+</head>
+<body>
+<!-- 头部导航结束 -->
+<div class="index_section">
+    <!-- 左侧导航开始 -->
+    <aside class="index_aside">
+        <ul>
+            <li class="herde">
+                首页
+                <img src="/images/login_index_35.png" class="index_shouye">
+                <img src="/images/login_index_01_00.png" class="index_youce">
+            </li>
+            <li>
+                终端管理
+                <img src="/images/login_index_45.png" class="index_shouye">
+                <img src="/images/login_index_01_00.png" class="index_youce">
+            </li>
+            <li>
+                审计报警
+                <img src="/images/login_index_48.png" class="index_shouye">
+                <img src="/images/login_index_01_00.png" class="index_youce">
+            </li>
+            <li>
+                策略管理
+                <img src="/images/login_index_51.png" class="index_shouye">
+                <img src="/images/login_index_01_00.png" class="index_youce">
+            </li>
+            <li></li>
+        </ul>
+    </aside>
+    <!-- 右侧开始 -->
+    <div class="index_sea">
+        <div class="index_sea_01">
+            <div class="index_lianjie">
+                <hgroup><h3>链接主机数</h3></hgroup>
+                <div class="index_sea_genduo"><img src="/images/login_index_77.png" alt="更多"></div>
+                <div></div>
+            </div>
+            <div class="index_fengxian">
+                <hgroup><h3>风险链接</h3></hgroup>
+                <div class="index_sea_genduo"><img src="/images/login_index_77.png" alt="更多"></div>
+                <div></div>
+            </div>
+            <div class="index_shuju">
+                <div class="index_ziliao">
+                    <div class="index_ziliao_con1">
+                        <div class="index_ziliao_toux"><img src="/images/login_logo_34.png" alt="头像" height="54px"></div>
+                        <div  class="index_ziliao_text">
+                            <p>
+                                <span>Ademin</span>
+                                <img src="/images/login_index_38.png" alt="修改">
+                            </p>
+                            <p>管理员</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="index_zhishu">
+                    <hgroup><h3>常用功能</h3></hgroup>
+                    <div class="index_sea_genduo"><img src="/images/login_index_77.png" alt="更多"></div>
+                    <div class="index_gongneng">
+                        <div>
+                            <img  src="/images/login_index_55.png"alt="客户端下载" />
+                            客户端下载
+                        </div>
+                        <div>
+                            <img src="/images/login_index_58.png"alt="用户管理" />
+                            用户管理
+                        </div>
+                        <div>
+                            <img src="/images/login_index_60.png"alt="部门管理" />
+                            部门管理
+                        </div>
+                        <div>
+                            <img src="/images/login_index_62.png"alt="修改密码" />
+                            修改密码
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="index_sea_02">
+            <div class="index_celve">
+                <hgroup><h3>策略管理</h3></hgroup>
+                <div class="index_sea_genduo"><img src="/images/login_index_77.png" alt="更多"></div>
+                <div></div>
+            </div>
+            <div class="index_shenji">
+                <hgroup><h3>审计统计</h3></hgroup>
+                <div class="index_sea_genduo"><img src="/images/login_index_77.png" alt="更多"></div>
+                <div></div>
+            </div>
+        </div>
+        <div class="index_sea_03">
+            <hgroup><h3>数据统计</h3></hgroup>
+            <div class="index_sea_genduo"><img src="/images/login_index_77.png" alt="更多"></div>
+
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

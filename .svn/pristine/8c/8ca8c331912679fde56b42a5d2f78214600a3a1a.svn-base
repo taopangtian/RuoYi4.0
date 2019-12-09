@@ -1,0 +1,13 @@
+com\backstage\generator\service\IGenTableService.class
+com\backstage\generator\util\VelocityInitializer.class
+com\backstage\generator\domain\GenTable.class
+com\backstage\generator\config\GenConfig.class
+com\backstage\generator\mapper\GenTableColumnMapper.class
+com\backstage\generator\util\GenUtils.class
+com\backstage\generator\service\IGenTableColumnService.class
+com\backstage\generator\controller\GenController.class
+com\backstage\generator\domain\GenTableColumn.class
+com\backstage\generator\util\VelocityUtils.class
+com\backstage\generator\service\impl\GenTableColumnServiceImpl.class
+com\backstage\generator\mapper\GenTableMapper.class
+com\backstage\generator\service\impl\GenTableServiceImpl.class

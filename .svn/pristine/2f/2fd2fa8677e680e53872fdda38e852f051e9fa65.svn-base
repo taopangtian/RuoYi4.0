@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html  lang="zh" xmlns:th="http://www.thymeleaf.org">
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>终端管理</title>
+		<link rel="stylesheet" type="text/css" href="/css/owl.css">
+		<script type="text/javascript">
+		    // document.write('屏幕宽度：' + screen.width);
+		    // document.write('屏幕高度：' + screen.height);
+		</script>
+	</head>
+	<body>
+		
+		<!-- 路径导航开始 -->
+		<div class="route">
+			<div class="route_magin_left route_x1 box_shadow border_radius">终端管理</div>
+			<img th:src="@{/images/login_index_01_00.png}" alt="建号" class="route_magin_left">
+		</div>
+		<!-- 路径导航结束 -->
+		
+		<!-- 条件筛选开始 -->
+		<section class="search box_shadow border_radius " id="section">
+			<ul>
+				<li>
+					<span>责任人</span>
+					<input type="text" name="search_zr" id="" placeholder="请输入责任人" required="" class="search_xuanz border_radius">
+				</li>
+				<li>
+					<span>部门</span>
+					<input type="text" name="search_bm" id="" placeholder="请输入部门名称" required="" class="search_xuanz border_radius">
+				</li>
+				<li>
+					<span>IP</span>
+					<input type="text" name="search_IP" id="" placeholder="请输入IP" required="" class="search_xuanz border_radius">
+				</li>
+				<li>
+					<span>离线</span>
+					<input type="text" name="search_lx" id="" placeholder="请输入选择离线时间" required="" class="search_xuanz border_radius">
+					<div class="search_calendar">
+						<img th:src="@{/images/index_temli_0003_rili.png}" alt="日历">
+					</div>
+				</li>
+			</ul>
+			<div class="buttom_max">
+				<input type="button" id="" value="查询" class="s_query border_radius s_buttom">
+				<input type="button" id="" value="清空" class="s_empty border_radius s_buttom">
+			</div>
+		</section>
+		<!-- 条件筛选结束 -->
+		<!-- 列表开始 -->
+		<div class="tm_max border_radius box_shadow">
+			<!-- 操作区开始 -->
+			<div class="tm_oper">
+				<input type="button" id="" value="增加" class="s_inc border_radius s_buttom">
+				<input type="button" id="" value="修改" class="s_modify border_radius s_buttom">
+				<input type="button" id="" value="删除" class="s_delete border_radius s_buttom">
+				<input type="button" id="" value="导入" class="s_import border_radius s_buttom">
+				<input type="button" id="" value="导出" class="s_export border_radius s_buttom">
+				<input type="button" id="" value="卸载网络" class="s_unin border_radius s_buttom">
+				<div class="sech_right box_shadow border_radius">
+					<ul>
+						<li onclick="change()"><img th:src="@{/images/index_temli_0004_sousuo.png}"  alt="搜索"/></li><li onclick="window.location.reload()"><img th:src="@{/images/index_temli_0005_shuaxin.png}" alt="搜索"/></li><li><img th:src="@{/images/index_temli_0006_gengduo.png}"  alt="搜索"/></li>
+					</ul>
+				</div>
+			</div>
+			<!-- 操作区结束 -->
+			<table class="per_table">
+				<tr>
+					<th><input type="checkbox" name="" value="序号"> 序号</th>
+					<th>责任人</th>
+					<th>单位</th>
+					<th>部门名称</th>
+					<th>IP</th>
+					<th>MAC</th>
+					<th>硬盘序列号</th>
+					<th>在线状态</th>
+					<th>离线时间</th>
+					<th>卸载时间</th>
+					<th>操作</th>
+				</tr>
+				<tr>
+					<td><input type="checkbox" name="" value="序号"> 001</td>
+					<td>大地方</td>
+					<td>福建大腿科技有限公司</td>
+					<td>技术部</td>
+					<td>192.168.1.1</td>
+					<td>04-98-23-23-23-43</td>
+					<td>CCDDFFWW</td>
+					<td>在线</td>
+					<td>2019-45-45 10:10:00</td>
+					<td>2019-45-45 10:10:00</td>
+					<td>
+						<input type="button" id="" value="修改" class="s_modify border_radius s_buttom">
+						<input type="button" id="" value="删除" class="s_delete border_radius s_buttom">
+					</td>
+				</tr>
+				<tr>
+					<td><input type="checkbox" name="" value="序号"> 001</td>
+					<td>大地方</td>
+					<td>福建大腿科技有限公司</td>
+					<td>技术部</td>
+					<td>192.168.1.1</td>
+					<td>04-98-23-23-23-43</td>
+					<td>CCDDFFWW</td>
+					<td>在线</td>
+					<td>2019-45-45 10:10:00</td>
+					<td>2019-45-45 10:10:00</td>
+					<td>
+						<input type="button" id="" value="修改" class="s_modify border_radius s_buttom">
+						<input type="button" id="" value="删除" class="s_delete border_radius s_buttom">
+					</td>
+				</tr>
+				<tr>
+					<td><input type="checkbox" name="" value="序号"> 001</td>
+					<td>大地方</td>
+					<td>福建大腿科技有限公司</td>
+					<td>技术部</td>
+					<td>192.168.1.1</td>
+					<td>04-98-23-23-23-43</td>
+					<td>CCDDFFWW</td>
+					<td>在线</td>
+					<td>2019-45-45 10:10:00</td>
+					<td>2019-45-45 10:10:00</td>
+					<td>
+						<input type="button" id="" value="修改" class="s_modify border_radius s_buttom">
+						<input type="button" id="" value="删除" class="s_delete border_radius s_buttom">
+					</td>
+				</tr>
+				<tr>
+					<td><input type="checkbox" name="" value="序号"> 001</td>
+					<td>大地方</td>
+					<td>福建大腿科技有限公司</td>
+					<td>技术部</td>
+					<td>192.168.1.1</td>
+					<td>04-98-23-23-23-43</td>
+					<td>CCDDFFWW</td>
+					<td>在线</td>
+					<td>2019-45-45 10:10:00</td>
+					<td>2019-45-45 10:10:00</td>
+					<td>
+						<input type="button" id="" value="修改" class="s_modify border_radius s_buttom">
+						<input type="button" id="" value="删除" class="s_delete border_radius s_buttom">
+					</td>
+				</tr>
+				<tr>
+					<td><input type="checkbox" name="" value="序号"> 001</td>
+					<td>大地方</td>
+					<td>福建大腿科技有限公司</td>
+					<td>技术部</td>
+					<td>192.168.1.1</td>
+					<td>04-98-23-23-23-43</td>
+					<td>CCDDFFWW</td>
+					<td>在线</td>
+					<td>2019-45-45 10:10:00</td>
+					<td>2019-45-45 10:10:00</td>
+					<td>
+						<input type="button" id="" value="修改" class="s_modify border_radius s_buttom">
+						<input type="button" id="" value="删除" class="s_delete border_radius s_buttom">
+					</td>
+				</tr>
+				<tr>
+					<td><input type="checkbox" name="" value="序号"> 001</td>
+					<td>大地方</td>
+					<td>福建大腿科技有限公司</td>
+					<td>技术部</td>
+					<td>192.168.1.1</td>
+					<td>04-98-23-23-23-43</td>
+					<td>CCDDFFWW</td>
+					<td>在线</td>
+					<td>2019-45-45 10:10:00</td>
+					<td>2019-45-45 10:10:00</td>
+					<td>
+						<input type="button" id="" value="修改" class="s_modify border_radius s_buttom">
+						<input type="button" id="" value="删除" class="s_delete border_radius s_buttom">
+					</td>
+				</tr>
+				<tr>
+					<td><input type="checkbox" name="" value="序号"> 001</td>
+					<td>大地方</td>
+					<td>福建大腿科技有限公司</td>
+					<td>技术部</td>
+					<td>192.168.1.1</td>
+					<td>04-98-23-23-23-43</td>
+					<td>CCDDFFWW</td>
+					<td>在线</td>
+					<td>2019-45-45 10:10:00</td>
+					<td>2019-45-45 10:10:00</td>
+					<td>
+						<input type="button" id="" value="修改" class="s_modify border_radius s_buttom">
+						<input type="button" id="" value="删除" class="s_delete border_radius s_buttom">
+					</td>
+				</tr>
+				<tr>
+					<td><input type="checkbox" name="" value="序号"> 001</td>
+					<td>大地方</td>
+					<td>福建大腿科技有限公司</td>
+					<td>技术部</td>
+					<td>192.168.1.1</td>
+					<td>04-98-23-23-23-43</td>
+					<td>CCDDFFWW</td>
+					<td>在线</td>
+					<td>2019-45-45 10:10:00</td>
+					<td>2019-45-45 10:10:00</td>
+					<td>
+						<input type="button" id="" value="修改" class="s_modify border_radius s_buttom">
+						<input type="button" id="" value="删除" class="s_delete border_radius s_buttom">
+					</td>
+				</tr>
+				<tr>
+					<td><input type="checkbox" name="" value="序号"> 001</td>
+					<td>大地方</td>
+					<td>福建大腿科技有限公司</td>
+					<td>技术部</td>
+					<td>192.168.1.1</td>
+					<td>04-98-23-23-23-43</td>
+					<td>CCDDFFWW</td>
+					<td>在线</td>
+					<td>2019-45-45 10:10:00</td>
+					<td>2019-45-45 10:10:00</td>
+					<td>
+						<input type="button" id="" value="修改" class="s_modify border_radius s_buttom">
+						<input type="button" id="" value="删除" class="s_delete border_radius s_buttom">
+					</td>
+				</tr>
+				<tr>
+					<td><input type="checkbox" name="" value="序号"> 001</td>
+					<td>大地方</td>
+					<td>福建大腿科技有限公司</td>
+					<td>技术部</td>
+					<td>192.168.1.1</td>
+					<td>04-98-23-23-23-43</td>
+					<td>CCDDFFWW</td>
+					<td>在线</td>
+					<td>2019-45-45 10:10:00</td>
+					<td>2019-45-45 10:10:00</td>
+					<td>
+						<input type="button" id="" value="修改" class="s_modify border_radius s_buttom">
+						<input type="button" id="" value="删除" class="s_delete border_radius s_buttom">
+					</td>
+				</tr>
+				<tr>
+					<td><input type="checkbox" name="" value="序号"> 001</td>
+					<td>大地方</td>
+					<td>福建大腿科技有限公司</td>
+					<td>技术部</td>
+					<td>192.168.1.1</td>
+					<td>04-98-23-23-23-43</td>
+					<td>CCDDFFWW</td>
+					<td>在线</td>
+					<td>2019-45-45 10:10:00</td>
+					<td>2019-45-45 10:10:00</td>
+					<td>
+						<input type="button" id="" value="修改" class="s_modify border_radius s_buttom">
+						<input type="button" id="" value="删除" class="s_delete border_radius s_buttom">
+					</td>
+				</tr>
+				<tr>
+					<td><input type="checkbox" name="" value="序号"> 001</td>
+					<td>大地方</td>
+					<td>福建大腿科技有限公司</td>
+					<td>技术部</td>
+					<td>192.168.1.1</td>
+					<td>04-98-23-23-23-43</td>
+					<td>CCDDFFWW</td>
+					<td>在线</td>
+					<td>2019-45-45 10:10:00</td>
+					<td>2019-45-45 10:10:00</td>
+					<td>
+						<input type="button" id="" value="修改" class="s_modify border_radius s_buttom">
+						<input type="button" id="" value="删除" class="s_delete border_radius s_buttom">
+					</td>
+				</tr>
+				<tr>
+					<td><input type="checkbox" name="" value="序号"> 001</td>
+					<td>大地方</td>
+					<td>福建大腿科技有限公司</td>
+					<td>技术部</td>
+					<td>192.168.1.1</td>
+					<td>04-98-23-23-23-43</td>
+					<td>CCDDFFWW</td>
+					<td>在线</td>
+					<td>2019-45-45 10:10:00</td>
+					<td>2019-45-45 10:10:00</td>
+					<td>
+						<input type="button" id="" value="修改" class="s_modify border_radius s_buttom">
+						<input type="button" id="" value="删除" class="s_delete border_radius s_buttom">
+					</td>
+				</tr>
+				<tr>
+					<td><input type="checkbox" name="" value="序号"> 001</td>
+					<td>大地方</td>
+					<td>福建大腿科技有限公司</td>
+					<td>技术部</td>
+					<td>192.168.1.1</td>
+					<td>04-98-23-23-23-43</td>
+					<td>CCDDFFWW</td>
+					<td>在线</td>
+					<td>2019-45-45 10:10:00</td>
+					<td>2019-45-45 10:10:00</td>
+					<td>
+						<input type="button" id="" value="修改" class="s_modify border_radius s_buttom">
+						<input type="button" id="" value="删除" class="s_delete border_radius s_buttom">
+					</td>
+				</tr>
+				<tr>
+					<td><input type="checkbox" name="" value="序号"> 001</td>
+					<td>大地方</td>
+					<td>福建大腿科技有限公司</td>
+					<td>技术部</td>
+					<td>192.168.1.1</td>
+					<td>04-98-23-23-23-43</td>
+					<td>CCDDFFWW</td>
+					<td>在线</td>
+					<td>2019-45-45 10:10:00</td>
+					<td>2019-45-45 10:10:00</td>
+					<td>
+						<input type="button" id="" value="修改" class="s_modify border_radius s_buttom">
+						<input type="button" id="" value="删除" class="s_delete border_radius s_buttom">
+					</td>
+				</tr>
+				<tr>
+					<td><input type="checkbox" name="" value="序号"> 001</td>
+					<td>大地方</td>
+					<td>福建大腿科技有限公司</td>
+					<td>技术部</td>
+					<td>192.168.1.1</td>
+					<td>04-98-23-23-23-43</td>
+					<td>CCDDFFWW</td>
+					<td>在线</td>
+					<td>2019-45-45 10:10:00</td>
+					<td>2019-45-45 10:10:00</td>
+					<td>
+						<input type="button" id="" value="修改" class="s_modify border_radius s_buttom">
+						<input type="button" id="" value="删除" class="s_delete border_radius s_buttom">
+					</td>
+				</tr>
+				<tr>
+					<td><input type="checkbox" name="" value="序号"> 001</td>
+					<td>大地方</td>
+					<td>福建大腿科技有限公司</td>
+					<td>技术部</td>
+					<td>192.168.1.1</td>
+					<td>04-98-23-23-23-43</td>
+					<td>CCDDFFWW</td>
+					<td>在线</td>
+					<td>2019-45-45 10:10:00</td>
+					<td>2019-45-45 10:10:00</td>
+					<td>
+						<input type="button" id="" value="修改" class="s_modify border_radius s_buttom">
+						<input type="button" id="" value="删除" class="s_delete border_radius s_buttom">
+					</td>
+				</tr>
+
+			</table>
+		</div>
+		<!-- 列表结束 -->
+		<script>
+			function change(){
+			 var divEle= document.getElementById('section');
+			divEle.className='demo2';//改变样式
+			
+};
+		</script>
+	</body>
+</html>
