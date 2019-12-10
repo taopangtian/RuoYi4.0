@@ -32,7 +32,7 @@
 	</div>
 	<div class="index_header">
 		<ul>
-			<li th:each="menu : ${menus}" th:data-url="@{${menu.url == ''} ? |#| : ${menu.url}}">
+			<li th:each="menu : ${menus}" th:data-id="${menu.menuId}" th:data-url="@{${menu.url == ''} ? |#| : ${menu.url}}">
 				<div th:class="${menu.icon}"></div>
 			</li>
 		</ul>
@@ -72,13 +72,13 @@
 		$(".index_nav .index_header li").bind("click",function () {
 
 			var dataUrl= $(this).attr("data-url");
-
+			var dataId=$(this).attr("data-id");
 			if(!dataUrl){ return false;}
-
+			dataUrl=dataUrl+"?menuId="+dataId;
 			var loading = layer.load(0, {shade: false});
 
 			$(this).addClass("div_selection").siblings().removeClass("div_selection");
-			$(".owl_iframe>iframe").attr("src",  $(this).attr("data-url") );
+			$(".owl_iframe>iframe").attr("src",  dataUrl);
 
 			$('.owl_iframe>iframe:visible').load(function () {
 				layer.close(loading);
@@ -87,6 +87,23 @@
 
 		});
 
+
 	});
+	window.onload=function () {
+
+		var dataUrl= "/owl/main";
+		var dataId=1;
+		if(!dataUrl){ return false;}
+		dataUrl=dataUrl+"?menuId="+dataId;
+		var loading = layer.load(0, {shade: false});
+
+		$(this).addClass("div_selection").siblings().removeClass("div_selection");
+		$(".owl_iframe>iframe").attr("src",  dataUrl);
+
+		$('.owl_iframe>iframe:visible').load(function () {
+			layer.close(loading);
+		});
+		return true;
+	}
 </script>
 </html>

@@ -129,4 +129,6 @@ public interface ISysMenuService
      * @return 结果
      */
     public String checkMenuNameUnique(SysMenu menu);
+
+    List<SysMenu> selectMenusById(Long menuId);
 }

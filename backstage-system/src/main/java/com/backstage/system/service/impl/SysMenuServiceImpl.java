@@ -319,6 +319,11 @@ public class SysMenuServiceImpl implements ISysMenuService
         return UserConstants.MENU_NAME_UNIQUE;
     }
 
+    @Override
+    public List<SysMenu> selectMenusById(Long menuId) {
+        return menuMapper.selectMenusById(menuId);
+    }
+
     /**
      * 根据父节点的ID获取所有子节点
      * 

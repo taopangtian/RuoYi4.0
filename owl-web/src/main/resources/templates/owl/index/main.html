@@ -6,30 +6,38 @@
 <body>
 <div class="index_section ">
     <!-- 左侧导航开始 -->
-    <aside class="index_aside box_shadow border_radius" >
+    <aside class="index_aside box_shadow border_radius server_nav" >
         <ul>
-            <li class="herde">
-                首页
-                <img src="/images/login_index_35.png" class="index_shouye">
-                <img src="/images/login_index_01_00.png" class="index_youce">
+            <li th:each="menu : ${menus}" th:data-id="${menu.menuId}" th:data-url="@{${menu.url == ''} ? |#| : ${menu.url}}">
+                <a href="#">
+                    <div th:text="${menu.menuName}"></div>
+                    <img th:src="'/images/'+${menu.icon}+'.png'" class="index_shouye">
+                    <img th:src="@{/images/login_index_01_00.png}" class="index_youce"></a>
             </li>
-            <li>
-                终端管理
-                <img src="/images/login_index_45.png" class="index_shouye">
-                <img src="/images/login_index_01_00.png" class="index_youce">
-            </li>
-            <li>
-                审计报警
-                <img src="/images/login_index_48.png" class="index_shouye">
-                <img src="/images/login_index_01_00.png" class="index_youce">
-            </li>
-            <li>
-                策略管理
-                <img src="/images/login_index_51.png" class="index_shouye">
-                <img src="/images/login_index_01_00.png" class="index_youce">
-            </li>
-            <li></li>
         </ul>
+<!--        <ul>-->
+<!--            <li class="herde">-->
+<!--                首页-->
+<!--                <img src="/images/index_detail.png" class="index_shouye">-->
+<!--                <img src="/images/login_index_01_00.png" class="index_youce">-->
+<!--            </li>-->
+<!--            <li>-->
+<!--                终端管理-->
+<!--                <img src="/images/terminal_manage.png" class="index_shouye">-->
+<!--                <img src="/images/login_index_01_00.png" class="index_youce">-->
+<!--            </li>-->
+<!--            <li>-->
+<!--                审计报警-->
+<!--                <img src="/images/audit_alarm.png" class="index_shouye">-->
+<!--                <img src="/images/login_index_01_00.png" class="index_youce">-->
+<!--            </li>-->
+<!--            <li>-->
+<!--                策略管理-->
+<!--                <img src="/images/strategy_manage.png" class="index_shouye">-->
+<!--                <img src="/images/login_index_01_00.png" class="index_youce">-->
+<!--            </li>-->
+<!--            <li></li>-->
+<!--        </ul>-->
     </aside>
     <!-- 右侧开始 -->
     <div class="index_sea">

@@ -8,76 +8,17 @@
 <!-- 导航结束 -->
 <div class="index_section ">
 	<!-- 左侧导航开始 -->
-	<aside class="index_aside box_shadow border_radius server_nav" >
+	<aside class="index_aside box_shadow border_radius server_nav">
+
 		<ul>
-			<li class="herde">
+			<li th:each="menu : ${menus}" th:data-id="${menu.menuId}" th:data-url="@{${menu.url == ''} ? |#| : ${menu.url}}">
 				<a href="#">
-					修改密码
-					<img th:src="@{/images/index_set_0012.png}" class="index_shouye">
+					<div th:text="${menu.menuName}"></div>
+					<img th:src="'/images/'+${menu.icon}+'.png'" class="index_shouye">
 					<img th:src="@{/images/login_index_01_00.png}" class="index_youce"></a>
-			</li>
-			<li >
-				<a href="#">
-					服务器设置
-					<img th:src="@{/images/index_set_0011.png}" class="index_shouye">
-					<img th:src="@{/images/login_index_01_00.png}" class="index_youce"></a>
-			</li>
-			<li><a href="#">
-				单位信息
-				<img th:src="@{/images/index_set_0010.png}" class="index_shouye">
-				<img th:src="@{/images/login_index_01_00.png}" class="index_youce"></a>
-			</li>
-			<li><a href="#">
-				部门管理
-				<img th:src="@{/images/index_set_0009.png}" class="index_shouye">
-				<img th:src="@{/images/login_index_01_00.png}" class="index_youce"></a>
-			</li>
-			<li><a href="#">
-				自定义组管理
-				<img th:src="@{/images/index_set_0008.png}" class="index_shouye">
-				<img th:src="@{/images/login_index_01_00.png}" class="index_youce"></a>
-			</li>
-			<li><a href="#">
-				模板管理
-				<img th:src="@{/images/index_set_0007.png}" class="index_shouye">
-				<img th:src="@{/images/login_index_01_00.png}" class="index_youce"></a>
-			</li>
-			<li><a href="#">
-				登录设置
-				<img th:src="@{/images/index_set_0006.png}" class="index_shouye">
-				<img th:src="@{/images/login_index_01_00.png}" class="index_youce"></a>
-			</li>
-			<li><a href="#">
-				个人设置
-				<img th:src="@{/images/index_set_0005.png}" class="index_shouye">
-				<img th:src="@{/images/login_index_01_00.png}" class="index_youce"></a>
-			</li>
-			<li><a href="#">
-				授权管理
-				<img th:src="@{/images/index_set_0004.png}" class="index_shouye">
-				<img th:src="@{/images/login_index_01_00.png}" class="index_youce"></a>
-			</li>
-			<li><a href="#">
-				审计日记设置
-				<img th:src="@{/images/index_set_0003.png}" class="index_shouye">
-				<img th:src="@{/images/login_index_01_00.png}" class="index_youce"></a>
-			</li>
-			<li><a href="#">
-				用户设置
-				<img th:src="@{/images/index_set_0002.png}" class="index_shouye">
-				<img th:src="@{/images/login_index_01_00.png}" class="index_youce"></a>
-			</li>
-			<li><a href="#">
-				客户端管理
-				<img th:src="@{/images/index_set_0001.png}" class="index_shouye">
-				<img th:src="@{/images/login_index_01_00.png}" class="index_youce"></a>
-			</li>
-			<li><a href="#">
-				邮件设置
-				<img th:src="@{/images/index_set_0000.png}" class="index_shouye">
-				<img th:src="@{/images/login_index_01_00.png}" class="index_youce"></a>
 			</li>
 		</ul>
+
 	</aside>
 	<!-- 右侧开始 -->
 	<div class="index_sea">
@@ -1193,5 +1134,17 @@
 
 	</div>
 </div>
+<script type="text/javascript">
+	$(function(){
+		//选项卡切换
+		$('.server_nav ul li').click(function(){
+			indexC = $(this).index();
+			$(this).addClass('herde').siblings().removeClass('herde');
+			$('.cont').eq(indexC).addClass('cont_header').siblings().removeClass('cont_header');
+		})
+
+	});
+
+</script>
 </body>
 </html>

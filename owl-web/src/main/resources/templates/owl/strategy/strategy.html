@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<html  lang="zh" xmlns:th="http://www.thymeleaf.org">
 <html>
 <head>
 	<th:block th:include="/owl/head :: header('OWL后台系统')" />
@@ -7,25 +8,35 @@
 <div class="index_section ">
 	<!-- 左侧导航开始 -->
 	<aside class="index_aside box_shadow border_radius server_nav" >
-		<ul>
-			<li class="herde">
-				<a href="#">
-					策略管理
-					<img src="/images/index_set_0012.png" class="index_shouye">
-					<img src="/images/login_index_01_00.png" class="index_youce"></a>
-			</li>
-			<li >
-				<a href="#">
-					终端检查
-					<img src="/images/index_set_0011.png" class="index_shouye">
-					<img src="/images/login_index_01_00.png" class="index_youce"></a>
-			</li>
-			<li><a href="#">
-				文件监控
-				<img src="/images/index_set_0010.png" class="index_shouye">
-				<img src="/images/login_index_01_00.png" class="index_youce"></a>
-			</li>
-		</ul>
+
+				<ul>
+					<li th:each="menu : ${menus}" th:data-id="${menu.menuId}" th:data-url="@{${menu.url == ''} ? |#| : ${menu.url}}">
+						<a href="#">
+							<div th:text="${menu.menuName}"></div>
+							<img th:src="'/images/'+${menu.icon}+'.png'" class="index_shouye">
+							<img th:src="@{/images/login_index_01_00.png}" class="index_youce"></a>
+					</li>
+				</ul>
+
+<!--		<ul>-->
+<!--			<li class="herde">-->
+<!--				<a href="#">-->
+<!--					策略管理-->
+<!--					<img src="/images/update_password.png" class="index_shouye">-->
+<!--					<img src="/images/login_index_01_00.png" class="index_youce"></a>-->
+<!--			</li>-->
+<!--			<li >-->
+<!--				<a href="#">-->
+<!--					终端检查-->
+<!--					<img src="/images/server_set.png" class="index_shouye">-->
+<!--					<img src="/images/login_index_01_00.png" class="index_youce"></a>-->
+<!--			</li>-->
+<!--			<li><a href="#">-->
+<!--				文件监控-->
+<!--				<img src="/images/unit_message.png" class="index_shouye">-->
+<!--				<img src="/images/login_index_01_00.png" class="index_youce"></a>-->
+<!--			</li>-->
+<!--		</ul>-->
 	</aside>
 	<!-- 右侧开始 -->
 	<!-- 右侧开始 -->

@@ -175,5 +175,8 @@
 		sysdate()
 		)
 	</insert>
-
+	<select id="selectMenusById" parameterType="Long" resultMap="SysMenuResult">
+		<include refid="selectMenuVo"/>
+		where parent_id=#{menuId}
+	</select>
 </mapper> 

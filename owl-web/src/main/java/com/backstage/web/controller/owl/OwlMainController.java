@@ -24,11 +24,23 @@ public class OwlMainController extends BaseController
 {
     private String prefix = "owl/index";
 
+    @Autowired
+    private ISysMenuService sysMenuService;
     // 系统首页
     @RequiresPermissions("owl:index:view")
     @GetMapping("/owl/main")
-    public String main(ModelMap mmap)
+    public String main(Long menuId,ModelMap mmap)
     {
+        // 取身份信息
+        SysUser user = ShiroUtils.getSysUser();
+
+        List<SysMenu> menus = sysMenuService.selectMenusById(menuId);
+        //System.out.println(menus.get(0).getMenuName());
+        mmap.put("menus", menus);
+        mmap.put("user", user);
+        mmap.put("copyrightYear", Global.getCopyrightYear());
+        mmap.put("demoEnabled", Global.isDemoEnabled());
+
         mmap.put("version", Global.getVersion());
         return prefix+ "/main";
     }
